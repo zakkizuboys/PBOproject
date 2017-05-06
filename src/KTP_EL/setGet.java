@@ -83,14 +83,6 @@ public class setGet {
         this.golonganDarah = golonganDarah;
     }
 
-    public String getAlamat() {
-        return Alamat;
-    }
-
-    public void setAlamat(String Alamat) {
-        this.Alamat = Alamat;
-    }
-
     public String getTempatLahir() {
         return tempatLahir;
     }
