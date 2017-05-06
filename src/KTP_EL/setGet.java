@@ -6,7 +6,8 @@ public class setGet {
     private char jenisKelamin;
     private String pekerjaan;
     private String golonganDarah;
-    private String Alamat;
+    private String Kelurahan;
+    private String RT;
     private String tempatLahir;
     private String tanggalLahir;
     private String kewarganegaraan;
