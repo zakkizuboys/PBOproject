@@ -7,7 +7,6 @@ public class setGet {
     private String pekerjaan;
     private String golonganDarah;
     private String Kelurahan;
-    private String RT;
     private String tempatLahir;
     private String tanggalLahir;
     private String kewarganegaraan;
@@ -33,14 +32,6 @@ public class setGet {
 
     public void setKelurahan(String Kelurahan) {
         this.Kelurahan = Kelurahan;
-    }
-
-    public String getRT() {
-        return RT;
-    }
-
-    public void setRT(String RT) {
-        this.RT = RT;
     }
 
     public String getNama() {
