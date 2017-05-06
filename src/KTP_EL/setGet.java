@@ -12,16 +12,35 @@ public class setGet {
     private String tanggalLahir;
     private String kewarganegaraan;
 
-    public setGet(String Nama, String Agama, char jenisKelamin, String pekerjaan, String golonganDarah, String Alamat, String tempatLahir, String tanggalLahir, String kewarganegaraan) {
+    public setGet(String Nama, String Agama, char jenisKelamin, String pekerjaan, String golonganDarah, String Kelurahan, String RT, String tempatLahir, String tanggalLahir, String kewarganegaraan) {
         this.Nama = Nama;
         this.Agama = Agama;
         this.jenisKelamin = jenisKelamin;
         this.pekerjaan = pekerjaan;
         this.golonganDarah = golonganDarah;
-        this.Alamat = Alamat;
+        this.Kelurahan = Kelurahan;
+        this.RT = RT;
         this.tempatLahir = tempatLahir;
         this.tanggalLahir = tanggalLahir;
         this.kewarganegaraan = kewarganegaraan;
+    }
+
+    
+
+    public String getKelurahan() {
+        return Kelurahan;
+    }
+
+    public void setKelurahan(String Kelurahan) {
+        this.Kelurahan = Kelurahan;
+    }
+
+    public String getRT() {
+        return RT;
+    }
+
+    public void setRT(String RT) {
+        this.RT = RT;
     }
 
     public String getNama() {
