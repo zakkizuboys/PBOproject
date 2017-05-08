@@ -1,42 +1,47 @@
 package KTP_EL;
 
 public class setGet {
-    private String Nama;
-    private String Agama;
+    private String nama;
+    private String agama;
     private char jenisKelamin;
     private String pekerjaan;
     private String golonganDarah;
-    private String Alamat;
+    private String kelurahan;
+    private String RT;
     private String tempatLahir;
     private String tanggalLahir;
     private String kewarganegaraan;
 
-    public setGet(String Nama, String Agama, char jenisKelamin, String pekerjaan, String golonganDarah, String Alamat, String tempatLahir, String tanggalLahir, String kewarganegaraan) {
-        this.Nama = Nama;
-        this.Agama = Agama;
+    public setGet() {
+    }
+
+    public setGet(String nama, String agama, char jenisKelamin, String pekerjaan, String golonganDarah, String kelurahan, String RT, String tempatLahir, String tanggalLahir, String kewarganegaraan) {
+        this.nama = nama;
+        this.agama = agama;
         this.jenisKelamin = jenisKelamin;
         this.pekerjaan = pekerjaan;
         this.golonganDarah = golonganDarah;
-        this.Alamat = Alamat;
+        this.kelurahan = kelurahan;
+        this.RT = RT;
         this.tempatLahir = tempatLahir;
         this.tanggalLahir = tanggalLahir;
         this.kewarganegaraan = kewarganegaraan;
     }
 
     public String getNama() {
-        return Nama;
+        return nama;
     }
 
-    public void setNama(String Nama) {
-        this.Nama = Nama;
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     public String getAgama() {
-        return Agama;
+        return agama;
     }
 
-    public void setAgama(String Agama) {
-        this.Agama = Agama;
+    public void setAgama(String agama) {
+        this.agama = agama;
     }
 
     public char getJenisKelamin() {
@@ -63,12 +68,20 @@ public class setGet {
         this.golonganDarah = golonganDarah;
     }
 
-    public String getAlamat() {
-        return Alamat;
+    public String getKelurahan() {
+        return kelurahan;
     }
 
-    public void setAlamat(String Alamat) {
-        this.Alamat = Alamat;
+    public void setKelurahan(String kelurahan) {
+        this.kelurahan = kelurahan;
+    }
+
+    public String getRT() {
+        return RT;
+    }
+
+    public void setRT(String RT) {
+        this.RT = RT;
     }
 
     public String getTempatLahir() {
@@ -93,6 +106,5 @@ public class setGet {
 
     public void setKewarganegaraan(String kewarganegaraan) {
         this.kewarganegaraan = kewarganegaraan;
-    }
-    
+    }   
 }
