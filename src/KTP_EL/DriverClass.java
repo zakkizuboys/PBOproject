@@ -14,7 +14,9 @@ import java.util.Scanner;
 public class DriverClass {
     public static void main(String[] args) {
         int c,d;
+        String nm,agm,jk,pk,gd,tl,tgl,kw;
         Scanner sc = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         setGet st = new setGet();
         
         System.out.println("1. kelurahan bisa");
@@ -37,9 +39,17 @@ public class DriverClass {
                     case 1:
                         st.setRT("01");
                         System.out.println("masukkan nama :");
+                        nm = scn.nextLine();
+                        st.setNama(nm);
                         System.out.println("masukkan agama :");
+                        agm = scn.nextLine();
+                        st.setAgama(agm);
                         System.out.println("masukkan jenis kelamin :");
+                        jk = scn.nextLine();
+                        //st.setJenisKelamin(jk);
                         System.out.println("masukkan pekerjaan :");
+                        pk = scn.nextLine();
+                        st.setPekerjaan(pk);
                         System.out.println("masukkan golongan darah :");
                         System.out.println("masukkan tempat lahir :");
                         System.out.println("masukkan tanggal lahir :");
