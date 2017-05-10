@@ -50,7 +50,7 @@ public class DriverClass {
                         System.out.println("masukkan pekerjaan :");
                         pk = scn.nextLine();
                         st.setPekerjaan(pk);
-                        System.out.println("masukkan golongan darah :");
+                        System.out.println("masukkan golongan darah:");
                         System.out.println("masukkan tempat lahir :");
                         System.out.println("masukkan tanggal lahir :");
                         System.out.println("masukkan kewarganegaraan :");
