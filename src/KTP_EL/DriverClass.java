@@ -5,6 +5,8 @@
  */
 package KTP_EL;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -19,6 +21,9 @@ public class DriverClass {
         Scanner sc = new Scanner(System.in);
         Scanner scn = new Scanner(System.in);
         setGet st = new setGet();
+        
+        HashMap<String, ArrayList> dataHash = new HashMap<String, ArrayList>();
+        ArrayList<String> dataList = new ArrayList<String>();
 
         System.out.println("1. kelurahan bisa");
         System.out.println("2. kelurahan siap");
@@ -47,7 +52,7 @@ public class DriverClass {
                         st.setAgama(agm);
                         System.out.println("masukkan jenis kelamin :");
                         jk = scn.nextLine();
-                        //st.setJenisKelamin(0);
+                        st.setJenisKelamin(jk);
                         System.out.println("masukkan pekerjaan :");
                         pk = scn.nextLine();
                         st.setPekerjaan(pk);
@@ -63,9 +68,8 @@ public class DriverClass {
                         System.out.println("masukkan kewarganegaraan :");
                         kw = scn.nextLine();
                         st.setKewarganegaraan(kw);
-                        //dataList.add("" + st.getNama() + " " + st.getAgama() + " " + st.getJenisKelamin() + " " + st.getPekerjaan() + " " + st.getGolonganDarah() + " " + st.getKelurahan() + " " + st.getRT() + " " + st.getTempatLahir() + " " + st.getTanggalLahir() + " " + st.getKewarganegaraan() + "");
-//                        
-                        //dataHash.put(st.getNama(), dataList);
+                        dataList.add("" + st.getNama() + " " + st.getAgama() + " " + st.getJenisKelamin() + " " + st.getPekerjaan() + " " + st.getGolonganDarah() + " " + st.getKelurahan() + " " + st.getRT() + " " + st.getTempatLahir() + " " + st.getTanggalLahir() + " " + st.getKewarganegaraan() + ""); 
+                        dataHash.put(st.getNama(), dataList);
 
                         break;
                 }
