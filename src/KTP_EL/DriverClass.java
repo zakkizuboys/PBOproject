@@ -6,6 +6,7 @@
 package KTP_EL;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -28,7 +29,7 @@ public class DriverClass {
 
         do {
             System.out.println("1. masukkan data ");
-            System.out.println("1. masukkan data ");
+            System.out.println("2. tampilkan data ");
             System.out.println("masukkan pilihan menu : ");
             e = sc.nextInt();
             switch (e) {
@@ -377,6 +378,7 @@ public class DriverClass {
                     }
                     break;
                 case 2:
+                    Collections.sort(dtList);
                     System.out.println("Nama\t" + "Agama\t" + "Jenis Kelamin\t" + "Pekerjaan\t" + "Golongan Darah\t" + "Kelurahan\t" + "RT\t" + "Tempat lahir\t" + "Tanggal Lahir\t" + "Kewarganegaraan");
                     for (int i = 0; i < dtList.size(); i++) {
                         System.out.println(ald.get(i).get(st.getNama()).get(i));
