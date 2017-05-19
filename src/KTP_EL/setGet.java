@@ -3,7 +3,7 @@ package KTP_EL;
 public class setGet {
     private String nama;
     private String agama;
-    private char jenisKelamin;
+    private String jenisKelamin;
     private String pekerjaan;
     private String golonganDarah;
     private String kelurahan;
@@ -15,7 +15,7 @@ public class setGet {
     public setGet() {
     }
 
-    public setGet(String nama, String agama, char jenisKelamin, String pekerjaan, String golonganDarah, String kelurahan, String RT, String tempatLahir, String tanggalLahir, String kewarganegaraan) {
+    public setGet(String nama, String agama, String jenisKelamin, String pekerjaan, String golonganDarah, String kelurahan, String RT, String tempatLahir, String tanggalLahir, String kewarganegaraan) {
         this.nama = nama;
         this.agama = agama;
         this.jenisKelamin = jenisKelamin;
@@ -44,11 +44,11 @@ public class setGet {
         this.agama = agama;
     }
 
-    public char getJenisKelamin() {
+    public String getJenisKelamin() {
         return jenisKelamin;
     }
 
-    public void setJenisKelamin(char jenisKelamin) {
+    public void setJenisKelamin(String jenisKelamin) {
         this.jenisKelamin = jenisKelamin;
     }
 
